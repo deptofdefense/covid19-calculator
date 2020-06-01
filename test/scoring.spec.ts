@@ -38,6 +38,7 @@ export const makeLabel = (
   expectLevel: LevelData
 ) => {
   const {
+    ages = [],
     symptoms = [],
     preExistingConditions = [],
     conditions = [],
@@ -51,7 +52,13 @@ export const makeLabel = (
     `(${normalizeLevel(expectLevel.likelihood)}|` +
     `${normalizeLevel(expectLevel.exposure)}|` +
     `${normalizeLevel(expectLevel.preExisting)}) ` +
-    [...symptoms, ...conditions, ...exposures, ...preExistingConditions]
+    [
+      ...ages,
+      ...symptoms,
+      ...conditions,
+      ...exposures,
+      ...preExistingConditions,
+    ]
       .sort()
       .join(', ')
   );
@@ -83,10 +90,18 @@ describe('Can calculate scores', () => {
 
   assess(
     {
+      ages: ['80-Infinity'],
+    },
+    { preExisting: 20 },
+    { preExisting: 'medium' }
+  );
+
+  assess(
+    {
       conditions: ['arouse'],
     },
     { likelihood: 40 },
-    { likelihood: 'medium' }
+    { likelihood: 'high' }
   );
 
   assess(
@@ -95,6 +110,9 @@ describe('Can calculate scores', () => {
     },
     {
       likelihood: 10,
+    },
+    {
+      likelihood: 'low',
     }
   );
 

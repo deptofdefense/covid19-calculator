@@ -88,6 +88,7 @@ export const calculateScore = (
 
 export const calculateScores = (dataToScore: MyStatusData) => {
   const {
+    ages = [],
     exposures = [],
     preExistingConditions = [],
     conditions = [],
@@ -95,6 +96,7 @@ export const calculateScores = (dataToScore: MyStatusData) => {
   } = dataToScore;
 
   const scores = mergeScores(
+    calculateScore('ages', ages),
     calculateScore('exposures', exposures),
     calculateScore('preExistingConditions', preExistingConditions),
     calculateScore('conditions', conditions),
@@ -114,7 +116,7 @@ export const calculateLevel = (category: ScoreCategory, score: number) => {
   let result = lowest[0];
 
   for (let [level, threshold] of rest) {
-    if (score > threshold) {
+    if (score >= threshold) {
       result = level;
     }
   }
