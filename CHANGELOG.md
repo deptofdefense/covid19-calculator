@@ -22,7 +22,7 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 - `calculateScores` now includes `ages`
 - `calculateLevel` now uses a level's value as an includive lower bound. Ex. `['low', 10]` means that a `score = 10` is labeled as `low` where previously it would have been labeled as `veryLow`.
-- `calculateScore` api has been updated in all calculator versions prior to calcualtor version `v1.4.0`
+- `calculateScore` api has been updated in all calculator versions prior to calculator version `v1.4.0`
 
 ## 0.1.0 Initial Package Release - 5/28/2020
 
