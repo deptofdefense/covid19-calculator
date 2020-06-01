@@ -1,6 +1,6 @@
 import {
   calculate,
-  MyStatusData,
+  DataToScore,
   emptyScore,
   ScoredData,
   LevelData,
@@ -33,11 +33,12 @@ const emptyLevel: LevelData = {
 };
 
 export const makeLabel = (
-  data: MyStatusData,
+  data: DataToScore,
   expectScore: ScoredData,
   expectLevel: LevelData
 ) => {
   const {
+    ages = [],
     symptoms = [],
     preExistingConditions = [],
     conditions = [],
@@ -51,14 +52,20 @@ export const makeLabel = (
     `(${normalizeLevel(expectLevel.likelihood)}|` +
     `${normalizeLevel(expectLevel.exposure)}|` +
     `${normalizeLevel(expectLevel.preExisting)}) ` +
-    [...symptoms, ...conditions, ...exposures, ...preExistingConditions]
+    [
+      ...ages,
+      ...symptoms,
+      ...conditions,
+      ...exposures,
+      ...preExistingConditions,
+    ]
       .sort()
       .join(', ')
   );
 };
 
 const assess = (
-  data: MyStatusData,
+  data: DataToScore,
   expectScore?: ScoredData,
   expectLevel?: LevelData
 ) => {
@@ -83,10 +90,18 @@ describe('Can calculate scores', () => {
 
   assess(
     {
+      ages: ['80-Infinity'],
+    },
+    { preExisting: 20 },
+    { preExisting: 'medium' }
+  );
+
+  assess(
+    {
       conditions: ['arouse'],
     },
     { likelihood: 40 },
-    { likelihood: 'medium' }
+    { likelihood: 'high' }
   );
 
   assess(
@@ -95,6 +110,9 @@ describe('Can calculate scores', () => {
     },
     {
       likelihood: 10,
+    },
+    {
+      likelihood: 'low',
     }
   );
 

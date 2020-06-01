@@ -1,5 +1,7 @@
 # COVID-19 Calculator
 
+[![npm version](https://badge.fury.io/js/%40deptofdefense%2Fcovid19-calculator.svg)](https://badge.fury.io/js/%40deptofdefense%2Fcovid19-calculator)
+
 ## Description
 
 COVID-19 Calculator provides a set of scoring algorithms for evaluating COVID-19 symptoms implemented in [TypeScript](https://www.typescriptlang.org/). The algorithms and associated inputs in this model are based on United States Department of Defense medical opinion and are actively used in [MySymptoms.mil](https://mysymptoms.mil/).
@@ -10,8 +12,16 @@ This calculator is currently maintained by [Defense Digital Service](https://dds
 
 ### Installation
 
+NPM:
+
 ```
-npm install @deptofdefense/covid19-calculator or yarn add @deptofdefense/covid19-calculator
+npm install @deptofdefense/covid19-calculator
+```
+
+Yarn:
+
+```
+yarn add @deptofdefense/covid19-calculator
 ```
 
 ### Latest Calculator

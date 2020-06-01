@@ -62,7 +62,7 @@ export const scale: ScaleLevels = {
 };
 
 type DataType = typeof scoreData;
-export type MyStatusData = Partial<
+export type DataToScore = Partial<
   {
     [K in keyof DataType]: string[];
   }
@@ -79,15 +79,16 @@ const mergeScores = (...args: Partial<ScoredData>[]): ScoredData =>
   );
 
 export const calculateScore = (
-  values: string[],
-  collection: ScorableCollection<string>
-): ScoredData =>
-  mergeScores(
-    ...collection.filter(collection => values.includes(collection.key))
-  );
+  ScoreCategory: keyof typeof scoreData,
+  values: string[]
+): ScoredData => {
+  const collection = scoreData[ScoreCategory] as ScorableCollection<string>;
+  return mergeScores(...collection.filter(item => values.includes(item.key)));
+};
 
-export const calculateScores = (dataToScore: MyStatusData) => {
+export const calculateScores = (dataToScore: DataToScore) => {
   const {
+    ages = [],
     exposures = [],
     preExistingConditions = [],
     conditions = [],
@@ -95,10 +96,11 @@ export const calculateScores = (dataToScore: MyStatusData) => {
   } = dataToScore;
 
   const scores = mergeScores(
-    calculateScore(exposures, scoreData.exposures),
-    calculateScore(preExistingConditions, scoreData.preExistingConditions),
-    calculateScore(conditions, scoreData.conditions),
-    calculateScore(symptoms, scoreData.symptoms)
+    calculateScore('ages', ages),
+    calculateScore('exposures', exposures),
+    calculateScore('preExistingConditions', preExistingConditions),
+    calculateScore('conditions', conditions),
+    calculateScore('symptoms', symptoms)
   );
 
   return scores;
@@ -114,7 +116,7 @@ export const calculateLevel = (category: ScoreCategory, score: number) => {
   let result = lowest[0];
 
   for (let [level, threshold] of rest) {
-    if (score > threshold) {
+    if (score >= threshold) {
       result = level;
     }
   }
@@ -130,7 +132,7 @@ export const calculateLevels = (scores: ScoredData): LevelData =>
     };
   }, {} as LevelData);
 
-export const calculate = (dataToScore: MyStatusData) => {
+export const calculate = (dataToScore: DataToScore) => {
   const scores = calculateScores(dataToScore);
 
   const levels = calculateLevels(scores);
