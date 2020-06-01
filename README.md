@@ -12,8 +12,16 @@ This calculator is currently maintained by [Defense Digital Service](https://dds
 
 ### Installation
 
+NPM:
+
 ```
-npm install @deptofdefense/covid19-calculator or yarn add @deptofdefense/covid19-calculator
+npm install @deptofdefense/covid19-calculator
+```
+
+Yarn:
+
+```
+yarn add @deptofdefense/covid19-calculator
 ```
 
 ### Latest Calculator
