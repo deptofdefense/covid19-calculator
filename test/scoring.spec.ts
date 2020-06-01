@@ -1,6 +1,6 @@
 import {
   calculate,
-  MyStatusData,
+  DataToScore,
   emptyScore,
   ScoredData,
   LevelData,
@@ -33,7 +33,7 @@ const emptyLevel: LevelData = {
 };
 
 export const makeLabel = (
-  data: MyStatusData,
+  data: DataToScore,
   expectScore: ScoredData,
   expectLevel: LevelData
 ) => {
@@ -65,7 +65,7 @@ export const makeLabel = (
 };
 
 const assess = (
-  data: MyStatusData,
+  data: DataToScore,
   expectScore?: ScoredData,
   expectLevel?: LevelData
 ) => {

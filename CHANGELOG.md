@@ -12,7 +12,7 @@ Please use the following format for version changes
 
 ### Fixed
 
-For more details see the specific version's [README](https://github.com/deptofdefense/mystatus-calculator/blob/master/src/{{VERSION}}/README.md)
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/{{VERSION}}/README.md)
 
 -->
 
@@ -74,9 +74,9 @@ Conditions:
 - dizziness
 - worseningSymptoms
 
-For more details see the specific version's [README](https://github.com/deptofdefense/mystatus-calculator/blob/master/src/v1.4.0/README.md)
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.4.0/README.md)
 
-Following this version, the guiding rules described in [CONTRIBUTING.md](https://github.com/deptofdefense/mystatus-calculator/blob/master/CONTRIBUTING.md) will be used when determining future version numbers.
+Following this version, the guiding rules described in [CONTRIBUTING.md](https://github.com/deptofdefense/covid19-calculator/blob/master/CONTRIBUTING.md) will be used when determining future version numbers.
 
 ### 1.3.0 - 4/28/2020
 
@@ -91,7 +91,7 @@ Conditions:
 - blueLips - likelihood: 20
 - arouse - likelihood: 20
 
-For more details see the specific version's [README](https://github.com/deptofdefense/mystatus-calculator/blob/master/src/v1.3.0/README.md)
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.3.0/README.md)
 
 ### 1.2.0 - 4/8/2020
 
@@ -105,7 +105,7 @@ Increased likelihood points for a few:
 - headache - likelihood: 20 (increased by 10)
 - throat - likelihood: 20 (increased by 10)
 
-For more details see the specific version's [README](https://github.com/deptofdefense/mystatus-calculator/blob/master/src/v1.2.0/README.md)
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.2.0/README.md)
 
 ### 1.1.0 - 4/7/2020
 
@@ -121,10 +121,10 @@ The scoring system was made more sensitive.
 - high: 40-69 (range decreased by 10)
 - veryHigh: 70+ (range decreased by 10)
 
-For more details see the specific version's [README](https://github.com/deptofdefense/mystatus-calculator/blob/master/src/v1.1.0/README.md)
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.1.0/README.md)
 
 ### 1.0.0 - 4/3/2020
 
 This initial version was based on conversations with Department of Defense medical professionals. The scores were based on the best available information at the time.
 
-For more details see the specific version's [README](https://github.com/deptofdefense/mystatus-calculator/blob/master/src/v1.0.0/README.md)
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.0.0/README.md)
