@@ -16,7 +16,7 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
-## 0.3.0 - 6/1/2020
+## 0.3.0 - 6/2/2020
 
 ### Fixed
 
