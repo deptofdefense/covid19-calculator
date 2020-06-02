@@ -30,7 +30,7 @@ There are two types of versioning for this project: package versioning and calcu
 
 ### Package Versioning
 
-Package versioning is the version number included in the [package.json](package.json) and used to ensure the intended version of this repo is imported into other programs. This version is encoded as `major.minor.patch` semantic version. The minor version number will be incremented with every API change until a stable version is released as `1.0.0`. To only receive patch updates, use `~0.2.0`.
+Package versioning is the version number included in the [package.json](package.json) and used to ensure the intended version of this repo is imported into other programs. This version is encoded as `major.minor.patch` semantic version. The minor version number will be incremented with every API change until a stable version is released as `1.0.0`. To only receive patch updates, use `~0.3.0`.
 
 ### Calculator Versioning
 
