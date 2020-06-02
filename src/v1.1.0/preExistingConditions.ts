@@ -1,6 +1,6 @@
 import { ScorableCollection } from './types';
 
-export type PreExsitingCondition =
+export type PreExistingCondition =
   | 'asthma'
   | 'overweight'
   | 'diabetes'
@@ -16,7 +16,7 @@ export type PreExsitingCondition =
   | 'pregnant'
   | 'otherConditions';
 
-export const preExistingConditions: ScorableCollection<PreExsitingCondition> = [
+export const preExistingConditions: ScorableCollection<PreExistingCondition> = [
   {
     key: 'asthma',
     prompt:
