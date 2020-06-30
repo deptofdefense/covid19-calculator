@@ -6,3 +6,4 @@ export * from './preExistingConditions';
 
 export * from './scale';
 export * from './types';
+export const calculatorVersion = '1.4.0';
