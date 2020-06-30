@@ -16,6 +16,15 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 0.3.1 - 6/30/2020
+
+### Added
+
+Both of these will allow for better tracking of data collected based on what version (both package and calculator) is in use.
+
+- `packageVersion` at the top level indicates the current package version
+- `calculatorVersion` at each version level indicates the calculator version.
+
 ## 0.3.0 - 6/2/2020
 
 ### Fixed
