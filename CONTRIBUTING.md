@@ -30,13 +30,13 @@ There are two types of versioning for this project: package versioning and calcu
 
 ### Package Versioning
 
-Package versioning is the version number included in the [package.json](package.json) and used to ensure the intended version of this repo is imported into other programs. This version is encoded as `major.minor.patch` semantic version. The minor version number will be incremented with every API change until a stable version is released as `1.0.0`. To only receive patch updates, use `~0.3.0`.
+Package versioning is the version number included in the [package.json](package.json) and used to ensure the intended version of this repo is imported into other programs. This version is encoded as `major.minor.patch` semantic version. The minor version number will be incremented with every API change until a stable version is released as `1.0.0`. To only receive patch updates, use `~0.4.0`.
 
 ### Calculator Versioning
 
 Calculator versioning has been taken from internal DDS nomenclature and does not perfectly match semantic versioning. Each version will include a small medical statement about the medical opinion at the time of the change and a clear [changelog](CHANGELOG.md) about the data and scoring.
 
-Moving forward from version `1.4.0`, version number will be guided by the rules below:
+Moving forward from version `1.4.1`, version number will be guided by the rules below:
 
 - **Patch** updates will typically be simple fixes that ultimately do not affect the scoring, for example typos in a prompt, updates to typescript types or other small adjustments.
 - **Minor** updates will include changes that affect the scores including changes to a specific option's score and the addition or removal of options. Anything that would start to produce a different score will likely fall into this category.
