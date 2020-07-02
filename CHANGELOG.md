@@ -16,6 +16,15 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 0.4.0 - 6/30/2020
+
+### Changes
+
+On 6/30/2020 it was noticed that the value of cough and fever had been swapped unintentionally. Calculator version 1.5.0 was added to resolve this.
+
+- fever 20 -> 10
+- cough 10 -> 20
+
 ## 0.3.1 - 6/30/2020
 
 ### Added
