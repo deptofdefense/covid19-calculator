@@ -2,16 +2,10 @@
 
 ## Medical Discussion
 
-This change in scoring takes into account the increase in seasonal allergy symptoms among the users. The goal for this version is to balance between creating unnecessary and not enough alarm. It was later determined that symptoms that strongly indicate allergy symptoms should have their points lowered just enough so if someone with allergies was taking the checker, they do not end up in the medium category solely with symptoms that could potentially indicate allergies.
+On 6/30/2020 it was noticed that the value of cough and fever had been swapped unintentionally. This version corrects that error.
 
-The change also increased the maximum individual scoring from 20 to 40 in order to take into account the symptoms that do not overlap with allergy symptoms and are still considered emergency warning signs that require immediate attention.
-
-### Changes from 1.4.0
-
-On 6/30/2020 it was noticed that the value of cough and fever had been swapped unintentionally. Package version 0.4.0 corrected this.
-
-- fever 20 -> 10
-- cough 10 -> 20
+- fever - likelihood +20 -> +10
+- cough - likelihood +10 -> +20
 
 ## Current Model
 
