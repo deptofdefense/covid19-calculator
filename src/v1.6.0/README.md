@@ -1,11 +1,22 @@
-# Version 1.5.0 - 7/2/2020
+# Version 1.6.0 - 6/30/2020
 
 ## Medical Discussion
 
-On 6/30/2020 it was noticed that the value of cough and fever had been swapped unintentionally. This version corrects that error.
+- CDC now includes nausea along with vomiting as a noted symptom. Congestion or runny nose is also noted. Both are scored at a +5 because they are not on the same scale as commonly noted symptoms and conditions that are currently scored higher.
+- Additionally, although dizziness and lightheadedness are not listed anymore on the site, CDC still includes it in their daily symptom checker. Therefore, we have decided that this will also be kept on our checker.
+- Red, pink eyes taken out since CDC no longer has this as a symptom.
 
-- fever - likelihood +20 -> +10
-- cough - likelihood +10 -> +20
+### Symptoms Added
+
+- Congestion or runny nose +5
+
+### Symptoms Changed
+
+- Nausea or vomiting +5 (previously was just "Vomiting")
+
+### Symptoms Removed
+
+- Itchy, red or pink eyes +5
 
 ## Current Model
 
@@ -40,7 +51,7 @@ On 6/30/2020 it was noticed that the value of cough and fever had been swapped u
 - dizziness - likelihood: 5
 - diarrhea - likelihood: 5
 - fatigue - likelihood: 5
-- eyes - likelihood: 5
+- congestion - likelihood: 5
 
 #### Conditions
 
