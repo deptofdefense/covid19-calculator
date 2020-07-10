@@ -16,7 +16,17 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
-## 0.4.0 - 6/30/2020
+## 0.5.0 - 7/8/2020
+
+### Changes
+
+Calculator version 1.6.0 includes updates based on recent CDC updated recommendations. 1.6.0 includes the following:
+
+- (Added) Congestion or runny nose +5
+- (Changed) Nausea or vomiting +5 (previously was just "Vomiting")
+- (Removed) Itchy, red or pink eyes +5
+
+## 0.4.0 - 7/2/2020
 
 ### Changes
 
