@@ -16,6 +16,12 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 0.5.1 - 7/30/2020
+
+### Fixed
+
+Calculator version 1.6.0 was previously reporting a `calculatorVersion` of `'1.5.0'`. This has been resolved.
+
 ## 0.5.0 - 7/8/2020
 
 ### Changes
