@@ -16,6 +16,17 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 0.6.0 - 8/31/2020
+
+### Changes
+
+Calulcator version 1.7.0 includes updates to exopsure questions.
+
+- (Added) New questions asking more directly about exposure to someone with COVID-19.
+- (Removed) The three previous travel questions
+
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.7.0/README.md)
+
 ## 0.5.1 - 7/30/2020
 
 ### Fixed
