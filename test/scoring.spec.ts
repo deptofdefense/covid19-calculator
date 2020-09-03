@@ -134,15 +134,34 @@ describe('Can calculate scores', () => {
 
   assess(
     {
+      symptoms: ['bodyAches'],
+      conditions: ['chestPain'],
+      preExistingConditions: ['diabetes'],
+      exposures: ['possibleContact'],
+    },
+    {
+      likelihood: 50,
+      preExisting: 20,
+      exposure: 10,
+    },
+    {
+      likelihood: 'high',
+      preExisting: 'medium',
+      exposure: 'medium',
+    }
+  );
+
+  assess(
+    {
       symptoms: ['bodyAches', 'chills', 'diarrhea', 'dizziness', 'fatigue'],
       conditions: ['chestPain', 'hardBreathing', 'arouse'],
       preExistingConditions: ['diabetes', 'difficultyThinking', 'hemodialysis'],
-      exposures: ['outsideContact', 'travelCountry'],
+      exposures: ['contact'],
     },
     {
       likelihood: 155,
       preExisting: 50,
-      exposure: 40,
+      exposure: 30,
     },
     {
       likelihood: 'veryHigh',
