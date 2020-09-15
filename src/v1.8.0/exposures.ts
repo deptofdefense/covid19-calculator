@@ -5,7 +5,7 @@ export type Exposure = 'contact' | 'possibleContact' | 'noContact';
 export const exposures: ScorableCollection<Exposure> = {
   key: 'exposures',
   label:
-    'In the last two weeks, did you care for or have close contact (within 6 feet of an infected person for at least 15 minutes) with someone with symptoms of COVID-19, tested for COVID-19, or diagnosed with COVID-19?',
+    'In the last 14 days, did you have close contact with someone with symptoms of COVID-19 or diagnosed with COVID-19?',
   items: [
     {
       key: 'contact',

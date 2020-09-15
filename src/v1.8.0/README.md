@@ -7,7 +7,7 @@
 
 ### Exposures Changed
 
-- In the last two weeks, did you care for or have close contact (within 6 feet of an infected person for at least 15 minutes) with someone with symptoms of COVID-19, tested for COVID-19, or diagnosed with COVID-19?
+- In the last 14 days, did you have close contact with someone with symptoms of COVID-19 or diagnosed with COVID-19?
   - contact - Yes +30
   - possibleContact - I Don't Know +10
   - noContact - No +0
@@ -28,7 +28,7 @@
 
 #### Exposures
 
-- In the last two weeks, did you care for or have close contact (within 6 feet of an infected person for at least 15 minutes) with someone with symptoms of COVID-19, tested for COVID-19, or diagnosed with COVID-19?
+- In the last 14 days, did you have close contact with someone with symptoms of COVID-19 or diagnosed with COVID-19?
   - contact - Yes - exposure: 30
   - possibleContact - I Don't Know - exposure: 10
   - noContact - No - exposure: 0
