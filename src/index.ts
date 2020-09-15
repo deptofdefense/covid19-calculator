@@ -6,7 +6,18 @@ import * as v1_4_0 from './v1.4.0';
 import * as v1_5_0 from './v1.5.0';
 import * as v1_6_0 from './v1.6.0';
 import * as v1_7_0 from './v1.7.0';
+import * as v1_8_0 from './v1.8.0';
 
-export * from './v1.7.0';
-export const packageVersion = '0.6.0';
-export { v1_0_0, v1_1_0, v1_2_0, v1_3_0, v1_4_0, v1_5_0, v1_6_0, v1_7_0 };
+export * from './v1.8.0';
+export const packageVersion = '1.0.0';
+export {
+  v1_0_0,
+  v1_1_0,
+  v1_2_0,
+  v1_3_0,
+  v1_4_0,
+  v1_5_0,
+  v1_6_0,
+  v1_7_0,
+  v1_8_0,
+};

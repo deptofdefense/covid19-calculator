@@ -16,6 +16,53 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 1.0.0 - 9/15/2020
+
+### BREAKING CHANGES
+
+All options now have a slightly different shape and include a label. This label is intented to provide more information on how the options are intended to be used and also solves the problem of trying to have a one of option. To access the same information, use the `items` key inside of each `ages`, `symptoms`, `conditions`, etc.
+
+#### Previously
+
+```
+export const ages: ScorableCollection<Age> = [
+  { prompt: '0-17', key: '0-17', preExisting: 0 },
+  { prompt: '18-39', key: '18-39', preExisting: 0 },
+  { prompt: '40-64', key: '40-64', preExisting: 0 },
+  { prompt: '65-69', key: '65-69', preExisting: 10 },
+  { prompt: '70-79', key: '70-79', preExisting: 15 },
+  { prompt: '80+', key: '80-Infinity', preExisting: 20 },
+];
+```
+
+#### Now
+
+```
+export const ages: ScorableCollection<Age> = {
+  key: 'ages',
+  label: "What's your age (in years)?",
+  items: [
+    { prompt: '0-17', key: '0-17', preExisting: 0 },
+    { prompt: '18-39', key: '18-39', preExisting: 0 },
+    { prompt: '40-64', key: '40-64', preExisting: 0 },
+    { prompt: '65-69', key: '65-69', preExisting: 10 },
+    { prompt: '70-79', key: '70-79', preExisting: 15 },
+    { prompt: '80+', key: '80-Infinity', preExisting: 20 },
+  ],
+};
+```
+
+### Changes
+
+Calulcator version 1.8.0 includes wording changes to exopsure questions and 1.7.0 wording was added as in aliases.
+
+- In the last two weeks, did you care for or have close contact (within 6 feet of an infected person for at least 15 minutes) with someone with symptoms of COVID-19, tested for COVID-19, or diagnosed with COVID-19?
+  - contact - Yes - exposure: 30
+  - possibleContact - I Don't Know - exposure: 10
+  - noContact - No - exposure: 0
+
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.7.0/README.md)
+
 ## 0.6.0 - 8/31/2020
 
 ### Changes
