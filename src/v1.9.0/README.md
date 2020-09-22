@@ -12,7 +12,7 @@
 
 ### Pre-Existing Conditions (new)
 
-Pre-existing conditions have been split into mroe options. Overall the options have not changed much but they are no longer grouped. The new options are listed here:
+Pre-existing conditions have been split into more options. Overall the options have not changed much but they are no longer grouped. The new options are listed here:
 
 - diabetesType2 - Type 2 diabetes mellitus - preExisting: 20
 - heartDisease - Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies - preExisting: 20
