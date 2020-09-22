@@ -120,7 +120,7 @@ describe('Can calculate scores', () => {
     {
       symptoms: ['bodyAches'],
       conditions: ['chestPain'],
-      preExistingConditions: ['diabetes'],
+      preExistingConditions: ['diabetesType2'],
     },
     {
       likelihood: 50,
@@ -136,12 +136,12 @@ describe('Can calculate scores', () => {
     {
       symptoms: ['bodyAches'],
       conditions: ['chestPain'],
-      preExistingConditions: ['diabetes'],
+      preExistingConditions: ['diabetesType1'],
       exposures: ['possibleContact'],
     },
     {
       likelihood: 50,
-      preExisting: 20,
+      preExisting: 10,
       exposure: 10,
     },
     {
@@ -155,12 +155,12 @@ describe('Can calculate scores', () => {
     {
       symptoms: ['bodyAches', 'chills', 'diarrhea', 'dizziness', 'fatigue'],
       conditions: ['chestPain', 'hardBreathing', 'arouse'],
-      preExistingConditions: ['diabetes', 'difficultyThinking', 'hemodialysis'],
+      preExistingConditions: ['overweight', 'diabetesType1'],
       exposures: ['contact'],
     },
     {
       likelihood: 155,
-      preExisting: 50,
+      preExisting: 30,
       exposure: 30,
     },
     {
