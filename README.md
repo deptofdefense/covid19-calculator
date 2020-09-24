@@ -134,7 +134,7 @@ const result = calculate({
 - Select your current symptoms:
   - cough - Cough - likelihood: 20
   - sob - Shortness of breath - likelihood: 20
-  - fever - Fever - likelihood: 10
+  - fever - Fever - likelihood: 20
   - bodyAches - Body aches or muscle pain - likelihood: 10
   - headache - Headache - likelihood: 10
   - throat - Sore throat - likelihood: 10
@@ -157,20 +157,28 @@ const result = calculate({
 #### Pre-existing Conditions
 
 - Select pre-existing conditions:
-  - asthma - Are you a smoker, have asthma, cystic fibrosis, COPD, or emphysema? - preExisting: 20
-  - diabetes - Do you have diabetes?- preExisting: 20
-  - heartDisease - Do you have heart disease, heart failure, or coronary artery disease? - preExisting: 20
-  - hemodialysis - Are you on hemodialysis? - preExisting: 20
-  - chemotherapy - Are you on chemotherapy or chemoradiation? - preExisting: 20
-  - transplant - Did you have organ an transplant or bone marrow transplant? - preExisting: 20
-  - sickleCellDisease - Do you have sickle cell disease, HIV, or AIDS? - preExisting: 20
-  - steroids - Do you take regular corticosteroids, or other immune weakening medications? - preExisting: 20
-  - otherConditions - Do you have a compromised immune system? - preExisting: 20
-  - overweight - Are you very overweight (Body Mass Index (BMI) of 40 or higher)? - preExisting: 10
-  - weakMuscles - Do you have an illness that makes your muscles feel weak? - preExisting: 10
-  - difficultyThinking - Do you have dementia, stroke, seizures, or brain injury? - preExisting: 10
-  - pregnant - Are you pregnant or recently pregnant? - preExisting: 10
-  - liverDisease - Do you have liver cirrhosis or liver disease? - preExisting: 10
+  - diabetesType2 - Type 2 diabetes mellitus - preExisting: 20
+  - heartDisease - Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies - preExisting: 20
+  - cancer - Cancer - preExisting: 20
+  - kidneyDisease - Chronic kidney disease - preExisting: 20
+  - copd - COPD - preExisting: 20
+  - organTransplant - Had a solid organ transplant - preExisting: 20
+  - sickleCellDisease - Sickle cell disease - preExisting: 20
+  - overweight - Very overweight (Body Mass Index (BMI) of 30 or higher) - preExisting: 20
+  - asthma - Asthma - preExisting: 15
+  - smoke - Currently smoking - preExisting: 15
+  - steroids - Take corticosteroids or other immunosuppressive medications - preExisting: 15
+  - pregnant - Pregnant - preExisting: 15
+  - cerebrovascular - Cerebrovascular disease - preExisting: 15
+  - hypertension - Hypertension - preExisting: 15
+  - diabetesType1 - Type 1 diabetes - preExisting: 10
+  - lungDisease - Cystic fibrosis, emphysema, or other chronic lung diseases - preExisting: 10
+  - thalassemia - Thalassemia - preExisting: 10
+  - neurologicCondition - Neurologic conditions - preExisting: 10
+  - liverDisease - Liver disease - preExisting: 10
+  - compromisedImmuneSystem - Compromised immune system - preExisting: 10
+  - hiv - HIV - preExisting: 10
+  - boneMarrowTransplant - Had a bone marrow transplant - preExisting: 10
 
 ### Scales
 

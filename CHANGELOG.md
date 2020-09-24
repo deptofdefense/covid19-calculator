@@ -16,6 +16,45 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 1.1.0 - 9/22/2020
+
+Adjustments have been made in accordnace with recent studies.
+
+### Changes
+
+Symptoms:
+
+- (Changed) fever - Fever +10 -> +20
+
+Pre-Existing Conditions:
+
+Across the board pre-exisitng conditions have been split apart. These are all marked as change because they all map back to a previous pre-existing condition.
+
+- (Changed) diabetesType2 - Type 2 diabetes mellitus - preExisting: 20
+- (Changed) heartDisease - Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies - preExisting: 20
+- (Changed) cancer - Cancer - preExisting: 20
+- (Changed) kidneyDisease - Chronic kidney disease - preExisting: 20
+- (Changed) copd - COPD - preExisting: 20
+- (Changed) organTransplant - Had a solid organ transplant - preExisting: 20
+- (Changed) sickleCellDisease - Sickle cell disease - preExisting: 20
+- (Changed) overweight - Very overweight (Body Mass Index (BMI) of 30 or higher) - preExisting: 20
+- (Changed) asthma - Asthma - preExisting: 15
+- (Changed) smoke - Currently smoking - preExisting: 15
+- (Changed) steroids - Take corticosteroids or other immunosuppressive medications - preExisting: 15
+- (Changed) pregnant - Pregnant - preExisting: 15
+- (Changed) cerebrovascular - Cerebrovascular disease - preExisting: 15
+- (Changed) hypertension - Hypertension - preExisting: 15
+- (Changed) diabetesType1 - Type 1 diabetes - preExisting: 10
+- (Changed) lungDisease - Cystic fibrosis, emphysema, or other chronic lung diseases - preExisting: 10
+- (Changed) thalassemia - Thalassemia - preExisting: 10
+- (Changed) neurologicCondition - Neurologic conditions - preExisting: 10
+- (Changed) liverDisease - Liver disease - preExisting: 10
+- (Changed) compromisedImmuneSystem - Compromised immune system - preExisting: 10
+- (Changed) hiv - HIV - preExisting: 10
+- (Changed) boneMarrowTransplant - Had a bone marrow transplant - preExisting: 10
+
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.9.0/README.md)
+
 ## 1.0.0 - 9/15/2020
 
 ### BREAKING CHANGES
@@ -61,7 +100,7 @@ Calulcator version 1.8.0 includes wording changes to exopsure questions and 1.7.
   - possibleContact - I Don't Know - exposure: 10
   - noContact - No - exposure: 0
 
-For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.7.0/README.md)
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.8.0/README.md)
 
 ## 0.6.0 - 8/31/2020
 
