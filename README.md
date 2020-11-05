@@ -149,7 +149,7 @@ const result = calculate({
 #### Conditions
 
 - Select current conditions:
-  - arouse - Confusion or inability to wake / stay awake (aliases: New confusion or inability to arouse) - likelihood: 40
+  - arouse - Disoriented or inability to wake/stay awake (worse than sleepy) (aliases: 'New confusion or inability to arouse', 'Confusion or inability to wake / stay awake') - likelihood: 40
   - hardBreathing - Trouble or difficulty breathing - likelihood: 40
   - chestPain - Persistent pain or pressure in the chest - likelihood: 40
   - blueLips - Bluish lips or face - likelihood: 40
