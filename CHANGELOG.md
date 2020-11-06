@@ -16,6 +16,16 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 1.2.0 - 11/5/2020
+
+Small change to the description of arouse
+
+### Changes
+
+- arouse - 'Confusion or inability to wake / stay awake' -> 'Disoriented or inability to wake/stay awake (worse than sleepy)'
+
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.9.1/README.md)
+
 ## 1.1.0 - 9/22/2020
 
 Adjustments have been made in accordnace with recent studies.
