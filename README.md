@@ -139,7 +139,7 @@ const result = calculate({
   - headache - Headache - likelihood: 10
   - throat - Sore throat - likelihood: 10
   - chills - Chills or repeated shaking with chills - likelihood: 10
-  - lossOfSmell - Altered smell/taste - likelihood: 10
+  - lossOfSmell - New loss of taste or smell - likelihood: 20
   - vomiting - Nausea or vomiting (aliases: Vomiting) - likelihood: 5
   - dizziness - Dizziness or lightheadedness - likelihood: 5
   - diarrhea - Diarrhea - likelihood: 5
