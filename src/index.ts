@@ -9,9 +9,10 @@ import * as v1_7_0 from './v1.7.0';
 import * as v1_8_0 from './v1.8.0';
 import * as v1_9_0 from './v1.9.0';
 import * as v1_9_1 from './v1.9.1';
+import * as v1_10_0 from './v1.10.0';
 
-export * from './v1.9.1';
-export const packageVersion = '1.2.0';
+export * from './v1.10.0';
+export const packageVersion = '1.3.0';
 export {
   v1_0_0,
   v1_1_0,
@@ -24,4 +25,5 @@ export {
   v1_8_0,
   v1_9_0,
   v1_9_1,
+  v1_10_0,
 };
