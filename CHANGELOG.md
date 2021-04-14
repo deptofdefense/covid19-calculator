@@ -16,6 +16,16 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 1.3.0 - 4/13/2021
+
+Small change to the description and pointing of lossOfSmell
+
+### Changes
+
+- lossOfSmell - 'Altered smell/taste' +10 -> 'New loss of taste or smell' +20
+
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.10.0/README.md)
+
 ## 1.2.0 - 11/5/2020
 
 Small change to the description of arouse
