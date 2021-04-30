@@ -16,6 +16,16 @@ For more details see the specific version's [README](https://github.com/deptofde
 
 -->
 
+## 1.4.0 - 4/27/2021
+
+Small change to the description blueLips
+
+### Changes
+
+- blueLips - 'Bluish lips or face' +10 -> 'Pale, gray, or blue-colored skin, lips, or nail beds '
+
+For more details see the specific version's [README](https://github.com/deptofdefense/covid19-calculator/blob/master/src/v1.10.1/README.md)
+
 ## 1.3.0 - 4/13/2021
 
 Small change to the description and pointing of lossOfSmell
