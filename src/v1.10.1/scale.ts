@@ -62,11 +62,9 @@ export const scale: ScaleLevels = {
 };
 
 type DataType = typeof scoreData;
-export type DataToScore = Partial<
-  {
-    [K in keyof DataType]: string[];
-  }
->;
+export type DataToScore = Partial<{
+  [K in keyof DataType]: string[];
+}>;
 
 const mergeScores = (...args: Partial<ScoredData>[]): ScoredData =>
   args.reduce<ScoredData>(
@@ -84,7 +82,7 @@ export const calculateScore = (
 ): ScoredData => {
   const collection = scoreData[ScoreCategory] as ScorableCollection<string>;
   return mergeScores(
-    ...collection.items.filter(item => values.includes(item.key))
+    ...collection.items.filter((item) => values.includes(item.key))
   );
 };
 
